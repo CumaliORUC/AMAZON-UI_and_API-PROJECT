@@ -1,0 +1,47 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-21T17:09:12.579Z",
+        "line": 4,
+        "name": "Amazon Web Page",
+        "description": "",
+        "id": "tc-001-amazon-web-page;amazon-web-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Go to testpage",
+            "match": {},
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@amazon"
+          }
+        ]
+      }
+    ],
+    "name": "TC_001 Amazon Web page",
+    "description": "",
+    "id": "tc-001-amazon-web-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_001_TC_001_AmazonPage.feature",
+    "tags": [
+      {
+        "name": "@amazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.484">
+    <testcase classname="TC_001 Amazon Web page" name="Amazon Web Page" time="0.171">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When Go to testpage.........................................................undefined
+]]></failure>
+    </testcase>
+</testsuite>
