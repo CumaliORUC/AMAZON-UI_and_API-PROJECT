@@ -1,0 +1,295 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-25T14:58:34.551Z",
+        "line": 4,
+        "name": "Amazon Web Page",
+        "description": "",
+        "id": "tc-001-amazon-web-page;amazon-web-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27435490700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to \"testpage_Url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testpage_Url\"",
+                  "offset": 6
+                }
+              ],
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.goTo(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "TC_001 Amazon Web page",
+    "description": "",
+    "id": "tc-001-amazon-web-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/TC_001_AmazonPage.feature",
+    "tags": [
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-25T14:59:05.868Z",
+        "line": 3,
+        "name": "TC_0002 Success Login",
+        "description": "",
+        "id": "us-002;tc-0002-success-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4733435500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go to \"testpage_Url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testpage_Url\"",
+                  "offset": 6
+                }
+              ],
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.goTo(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2787271700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click to Sign_in_Icon",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.clickToSign_in_Icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2096238200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter a valid_mail address in the mail box",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.enter_a_valid_mail_address_in_the_mail_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to Continue",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.click_to_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195475500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter a valid_ password in the password box",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.enter_a_valid_password_in_the_password_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21224839700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click to Sign_in",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.clik_to_sign_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1829864100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Close the page",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.closeThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "US_002",
+    "description": "",
+    "id": "us-002",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/TC_002_PositiveLogin.feature",
+    "tags": [
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-25T14:59:38.762Z",
+        "line": 3,
+        "name": "TC_003 Negative Login",
+        "description": "",
+        "id": "us-002-negative-login;tc-003-negative-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27640010600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go to \"testpage_Url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testpage_Url\"",
+                  "offset": 6
+                }
+              ],
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.goTo(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2445423100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click to Sign_in_Icon",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.clickToSign_in_Icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2857027000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter a valid_mail address in the mail box",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.enter_a_valid_mail_address_in_the_mail_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to Continue",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.click_to_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2419261800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter a invalid_ password in the password box",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.enterAInvalid_PasswordInThePasswordBox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5126055400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close the page",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.closeThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "US_002 Negative Login",
+    "description": "",
+    "id": "us-002-negative-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/TC_003_NegativeLogin.feature",
+    "tags": [
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,3 +1,4 @@
+@Parallel2
 Feature: US_003 SubCategory Listing
 
   Scenario: TC_004_SubCategoryListing

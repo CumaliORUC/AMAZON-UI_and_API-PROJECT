@@ -1,3 +1,4 @@
+@Parallel1
 Feature: US_002
   Scenario:TC_0002 Success Login
     Given Go to "testpage_Url"

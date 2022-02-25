@@ -1,3 +1,4 @@
+@Parallel1
 Feature: US_002 Negative Login
   Scenario:TC_003 Negative Login
     Given Go to "testpage_Url"

@@ -1,0 +1,194 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-25T14:59:12.923Z",
+        "line": 4,
+        "name": "TC_004_SubCategoryListing",
+        "description": "",
+        "id": "us-003-subcategory-listing;tc-004-subcategorylisting",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51620865000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Success Login",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.succes_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13266883500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to All tab",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.click_to_all_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2203664400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click to any category",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.click_to_any_category()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1061939200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close the page",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.closeThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "US_003 SubCategory Listing",
+    "description": "",
+    "id": "us-003-subcategory-listing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/TC_004_SubCategoryListing.feature",
+    "tags": [
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-25T15:00:21.652Z",
+        "line": 4,
+        "name": "US_004_When the user searches for a product, all listed products must contain the searched word",
+        "description": "",
+        "id": "us-004-searching-product;us-004-when-the-user-searches-for-a-product--all-listed-products-must-contain-the-searched-word",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15969869900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Success Login",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.succes_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3360624600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click to search box",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.click_to_search_box()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4573982800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search \"product_name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product_name\"",
+                  "offset": 7
+                }
+              ],
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.search(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1518266900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Test all listed products must contain \"product_name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product_name\"",
+                  "offset": 38
+                }
+              ],
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.testAllListedProductsMustContain(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 254325200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close the page",
+            "match": {
+              "location": "ui.stepdefinitions.AmazonStepDefinitions.closeThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "US_004_Searching Product",
+    "description": "",
+    "id": "us-004-searching-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/TC_005_SearchingProduct.feature",
+    "tags": [
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

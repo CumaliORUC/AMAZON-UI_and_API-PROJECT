@@ -1,3 +1,4 @@
+@Parallel2
 Feature: US_004_Searching Product
 
   Scenario: US_004_When the user searches for a product, all listed products must contain the searched word

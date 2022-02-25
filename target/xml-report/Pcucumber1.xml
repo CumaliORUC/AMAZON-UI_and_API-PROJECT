@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="105.348">
+    <testcase classname="TC_001 Amazon Web page" name="Amazon Web Page" time="27.995">
+        <system-out><![CDATA[When Go to "testpage_Url"...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US_002" name="TC_0002 Success Login" time="32.881">
+        <system-out><![CDATA[Given Go to "testpage_Url"..................................................passed
+Then Click to Sign_in_Icon..................................................passed
+Then Enter a valid_mail address in the mail box.............................passed
+And Click to Continue.......................................................passed
+Then Enter a valid_ password in the password box............................passed
+When Click to Sign_in.......................................................passed
+And Close the page..........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US_002 Negative Login" name="TC_003 Negative Login" time="40.495">
+        <system-out><![CDATA[Given Go to "testpage_Url"..................................................passed
+Then Click to Sign_in_Icon..................................................passed
+Then Enter a valid_mail address in the mail box.............................passed
+And Click to Continue.......................................................passed
+Then Enter a invalid_ password in the password box..........................passed
+And Close the page..........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
