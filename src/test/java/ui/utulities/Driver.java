@@ -1,4 +1,4 @@
-package utulities;
+package ui.utulities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.OperaDriverManager;

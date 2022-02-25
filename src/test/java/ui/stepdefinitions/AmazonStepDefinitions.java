@@ -1,4 +1,4 @@
-package stepdefinitions;
+package ui.stepdefinitions;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
@@ -6,17 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import pages.AmazonPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import org.openqa.selenium.interactions.Actions;
+import ui.pages.AmazonPage;
+import ui.utulities.ConfigReader;
+import ui.utulities.Driver;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Random;
 
 public class AmazonStepDefinitions {
-    AmazonPage amazonPage=new AmazonPage();
+  AmazonPage amazonPage=new AmazonPage();
 
     @When("Go to {string}")
     public void goTo(String testUrl) {
@@ -164,7 +164,7 @@ public class AmazonStepDefinitions {
         System.out.println("Total of Cart "+amazonPage.totalPrice.getText());
         Assert.assertTrue(amazonPage.totalPrice.getText().toLowerCase().contains(priceOfProduct.toLowerCase()));
     }
-
+    ///////////////////////////       TC_008_FOOTER WEB TABLES  STEPS   /////////////////////////////////////////////////////
     @And("Go to bottom of page")
     public void goToBottomOfPage() {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
@@ -185,5 +185,50 @@ public class AmazonStepDefinitions {
         System.out.println("The link title is ==>"+Driver.getDriver().getTitle());
 
         Assert.assertTrue(Driver.getDriver().getTitle().contains(firstWord[0]));
+    }
+    //////////////   XXXXXXXXX       TC_009_CREATE SHOPPING LIST STEPS   XXXXXXXXXXXXXXXXXXX ///////////////////////////
+    @Then("Hold on the Sign in box")
+    public void hold_on_the_sign_in_box() {
+        Actions action=new Actions(Driver.getDriver());
+        action.moveToElement(amazonPage.Signin_Icon).perform();
+    }
+
+    @And("Click to Creat a List")
+    public void clickToCreatAList() {
+        amazonPage.createListButton.click();
+    }
+
+
+    @When("Click to Creat a List  at Your List page")
+    public void clickToCreatAListAtYourListPage() {
+        amazonPage.createListatYourList.click();
+    }
+
+    @Then("Write the nameList at the name Lİst box")
+    public void writeTheNameListAtTheNameLİstBox() {
+        Actions action=new Actions(Driver.getDriver());
+        amazonPage.listName_Box.clear();
+        action.sendKeys(amazonPage.listName_Box,"")
+                .keyDown(Keys.SHIFT).sendKeys("a")
+                .keyUp(Keys.SHIFT).sendKeys("li")
+                .sendKeys(Keys.TAB)
+                .sendKeys(Keys.TAB)
+                .sendKeys(Keys.TAB,Keys.ENTER)
+                .perform();
+        String expectedListName="Ali";
+        Assert.assertEquals(expectedListName,amazonPage.mylistName.getText());
+    }
+    //////////////   XXXXXXXXX       TC_0010_DELETE PRODUCT FROM LIST STEPS   XXXXXXXXXXXXXXXXXXX ///////////////////////////
+    @And("Go to your shoopping list")
+    public void goToYourShooppingList() {
+        amazonPage.ali_List.click();
+    }
+
+    @Then("Delete {string} product")
+    public void deleteProduct(String productNum) {
+        Driver.getDriver().
+                findElement(By.xpath("(//input[@name='submit.deleteItem'])["+ConfigReader.getProperty(productNum)+"]")).click();
+
+        Assert.assertTrue(amazonPage.deletedMessage.isDisplayed());
     }
 }

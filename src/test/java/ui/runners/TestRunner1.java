@@ -1,4 +1,4 @@
-package runners;
+package ui.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         // 1- bu notasyonun gorevi feature dosyalarim ile stepdefinition dosyalarini birlestirmek
-        features="src/test/resources/features",
-        glue="stepdefinitions",
+        features="src/test/resources/uiFeatures",
+        glue= "ui/stepdefinitions",
         // boylece package'lari birbirine bagliyoruz
         // bu iki paket altinda kactane class olursa olsun,
         // herhangi bir class'da yazilan her adim diger class'lardaki adimlarla uyusursa yeni adim olusturmaya gerek kalmaz

@@ -4,4 +4,5 @@ Feature: US_007_ Footer Links
     Given Success Login
     And   Go to bottom of page
     Then  Click the footer row no "row_no" and data no "data_no"
-    #satır ve sutun nolarını girerek çağırıyoruz.
+    #satır ve sutun nolarını ConfigReaderdan girerek çağırıyoruz.
+    And Close the page

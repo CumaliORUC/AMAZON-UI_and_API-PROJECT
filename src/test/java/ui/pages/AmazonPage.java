@@ -1,10 +1,10 @@
-package pages;
+package ui.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utulities.Driver;
+import ui.utulities.Driver;
 
 import java.util.List;
 
@@ -67,6 +67,23 @@ public class AmazonPage {
     @FindBy (xpath = "//div[@data-name='Subtotals']")
     public WebElement totalPrice;
 
+    @FindBy (xpath = "//span[@class='nav-text']")
+    public WebElement createListButton;
+
+    @FindBy (xpath = "//input[@class='a-button-input']")
+    public WebElement createListatYourList;
+
+    @FindBy (css = "input#list-name")
+    public WebElement listName_Box;
+
+    @FindBy (id = "profile-list-name")
+    public WebElement mylistName;
+
+    @FindBy (xpath = "//*[text()='Ali']")
+    public WebElement ali_List;
+
+    @FindBy (xpath = "//*[text()='Deleted']")
+    public WebElement deletedMessage;
 
     public List<WebElement> shoppingItems () {
         List<WebElement> shoopingItems=Driver.getDriver().findElements(By.xpath("//a[@data-menu-id]"));
