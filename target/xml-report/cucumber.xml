@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.484">
-    <testcase classname="TC_001 Amazon Web page" name="Amazon Web Page" time="0.171">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When Go to testpage.........................................................undefined
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.29">
+    <testcase classname="Trello_testi" name="Create_board" time="4.015">
+        <failure message="Cannot invoke &quot;io.restassured.path.json.JsonPath.getString(String)&quot; because &quot;this.jsonPath&quot; is null" type="java.lang.NullPointerException"><![CDATA[When POST request for create board..........................................passed
+Then Assert status code 200.................................................passed
+And Assert board name.......................................................failed
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "io.restassured.path.json.JsonPath.getString(String)" because "this.jsonPath" is null
+	at api.stepdefinitions.Trello2.assert_board_name_is(Trello2.java:57)
+	at ✽.Assert board name(file:///C:/Users/TR/Desktop/IT%20COURSE/AmazonProject/src/test/resources/apiFeature/CreateBoard.feature:7)
 ]]></failure>
     </testcase>
 </testsuite>

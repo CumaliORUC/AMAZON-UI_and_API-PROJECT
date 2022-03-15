@@ -1,47 +1,71 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-21T17:09:12.579Z",
+        "start_timestamp": "2022-03-11T17:28:37.495Z",
         "line": 4,
-        "name": "Amazon Web Page",
+        "name": "Create_board",
         "description": "",
-        "id": "tc-001-amazon-web-page;amazon-web-page",
+        "id": "trello-testi;create-board",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3937383700,
+              "status": "passed"
             },
             "line": 5,
-            "name": "Go to testpage",
-            "match": {},
+            "name": "POST request for create board",
+            "match": {
+              "location": "api.stepdefinitions.Trello2.send_post_request_for_create_board()"
+            },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15620800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Assert status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "api.stepdefinitions.Trello2.assertStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"io.restassured.path.json.JsonPath.getString(String)\" because \"this.jsonPath\" is null\r\n\tat api.stepdefinitions.Trello2.assert_board_name_is(Trello2.java:57)\r\n\tat ✽.Assert board name(file:///C:/Users/TR/Desktop/IT%20COURSE/AmazonProject/src/test/resources/apiFeature/CreateBoard.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Assert board name",
+            "match": {
+              "location": "api.stepdefinitions.Trello2.assert_board_name_is()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@amazon"
+            "name": "@amazon1"
           }
         ]
       }
     ],
-    "name": "TC_001 Amazon Web page",
+    "name": "Trello_testi",
     "description": "",
-    "id": "tc-001-amazon-web-page",
+    "id": "trello-testi",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_001_TC_001_AmazonPage.feature",
-    "tags": [
-      {
-        "name": "@amazon",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/apiFeature/CreateBoard.feature",
+    "tags": []
   }
 ]

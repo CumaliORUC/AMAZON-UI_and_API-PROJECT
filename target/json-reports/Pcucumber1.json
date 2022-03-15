@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-02-25T14:58:34.551Z",
+        "start_timestamp": "2022-03-11T18:39:15.713Z",
         "line": 4,
         "name": "Amazon Web Page",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27435490700,
+              "duration": 61037120700,
               "status": "passed"
             },
             "line": 5,
@@ -57,7 +57,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-25T14:59:05.868Z",
+        "start_timestamp": "2022-03-11T18:40:17.480Z",
         "line": 3,
         "name": "TC_0002 Success Login",
         "description": "",
@@ -67,7 +67,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4733435500,
+              "duration": 3456694300,
               "status": "passed"
             },
             "line": 4,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 2787271700,
+              "duration": 1673146500,
               "status": "passed"
             },
             "line": 5,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 2096238200,
+              "duration": 1567001600,
               "status": "passed"
             },
             "line": 6,
@@ -109,7 +109,6 @@
           },
           {
             "result": {
-              "duration": 999800,
               "status": "passed"
             },
             "line": 7,
@@ -121,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 195475500,
+              "duration": 99934400,
               "status": "passed"
             },
             "line": 8,
@@ -133,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 21224839700,
+              "duration": 9092348200,
               "status": "passed"
             },
             "line": 9,
@@ -145,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 1829864100,
+              "duration": 4655167800,
               "status": "passed"
             },
             "line": 10,
@@ -183,7 +182,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-25T14:59:38.762Z",
+        "start_timestamp": "2022-03-11T18:40:38.050Z",
         "line": 3,
         "name": "TC_003 Negative Login",
         "description": "",
@@ -193,7 +192,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27640010600,
+              "duration": 25270815000,
               "status": "passed"
             },
             "line": 4,
@@ -211,7 +210,7 @@
           },
           {
             "result": {
-              "duration": 2445423100,
+              "duration": 1543961900,
               "status": "passed"
             },
             "line": 5,
@@ -223,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 2857027000,
+              "duration": 5318999200,
               "status": "passed"
             },
             "line": 6,
@@ -235,6 +234,7 @@
           },
           {
             "result": {
+              "duration": 1000400,
               "status": "passed"
             },
             "line": 7,
@@ -246,7 +246,7 @@
           },
           {
             "result": {
-              "duration": 2419261800,
+              "duration": 1828872100,
               "status": "passed"
             },
             "line": 8,
@@ -258,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 5126055400,
+              "duration": 4152224100,
               "status": "passed"
             },
             "line": 9,

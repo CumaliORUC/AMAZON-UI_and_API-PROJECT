@@ -1,4 +1,5 @@
-package ui.runners;
+package api.runner;
+
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,13 +11,13 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         // 1- bu notasyonun gorevi feature dosyalarim ile stepdefinition dosyalarini birlestirmek
-        features="src/test/resources/uiFeatures",
-        glue= "ui/stepdefinitions",
+        features="src/test/resources/apiFeature",
+        glue= "api/stepdefinitions",
         // boylece package'lari birbirine bagliyoruz
         // bu iki paket altinda kactane class olursa olsun,
         // herhangi bir class'da yazilan her adim diger class'lardaki adimlarla uyusursa yeni adim olusturmaya gerek kalmaz
 
-        tags="@amazon", // work in progress
+        tags="@amazon1", // work in progress
         // 2-  @ testNG'degi group gibi calisir
         // eger sadece 1 Feature veya 1 Scenario calistiracaksak, gidip feature dosyasindan calistirabiliriz
         // birden fazla Feature veya Scenario calistirmak istedigimizde
@@ -29,7 +30,7 @@ import org.junit.runner.RunWith;
         dryRun=false
         // true oldugunda test case'leri calistirmayi denemeden sadece eksik olan step'leri bana verir
         // false oldugunda test case'leri calistirmayi dener eksik step' bulursa onu rapor eder
-)
-public class TestRunner1 {
 
+)
+public class ApiRunner {
 }

@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-25T14:59:12.923Z",
+        "start_timestamp": "2022-03-11T18:39:25.936Z",
         "line": 4,
         "name": "TC_004_SubCategoryListing",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51620865000,
+              "duration": 55356414600,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 13266883500,
+              "duration": 14989589500,
               "status": "passed"
             },
             "line": 7,
@@ -37,8 +37,9 @@
           },
           {
             "result": {
-              "duration": 2203664400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027home and kitchen\u0027]\"}\n  (Session info: chrome\u003d99.0.4844.51)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027DESKTOP-KDAKVSS\u0027, ip: \u0027192.168.1.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [83da58a6532ce36cae1d811c8a74fd56, findElement {using\u003dxpath, value\u003d//*[text()\u003d\u0027home and kitchen\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\\Users\\TR\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:53397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53397/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 83da58a6532ce36cae1d811c8a74fd56\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat ui.pages.AmazonPage.myItem(AmazonPage.java:98)\r\n\tat ui.stepdefinitions.AmazonStepDefinitions.click_to_any_category(AmazonStepDefinitions.java:93)\r\n\tat ✽.Click to any category(file:///C:/Users/TR/Desktop/IT%20COURSE/AmazonProject/src/test/resources/uiFeatures/TC_004_SubCategoryListing.feature:8)\r\n",
+              "duration": 12277165900,
+              "status": "failed"
             },
             "line": 8,
             "name": "Click to any category",
@@ -49,8 +50,7 @@
           },
           {
             "result": {
-              "duration": 1061939200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Close the page",
@@ -87,7 +87,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-25T15:00:21.652Z",
+        "start_timestamp": "2022-03-11T18:40:48.777Z",
         "line": 4,
         "name": "US_004_When the user searches for a product, all listed products must contain the searched word",
         "description": "",
@@ -97,8 +97,9 @@
         "steps": [
           {
             "result": {
-              "duration": 15969869900,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#ap_email\"}\n  (Session info: chrome\u003d99.0.4844.51)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027DESKTOP-KDAKVSS\u0027, ip: \u0027192.168.1.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [83da58a6532ce36cae1d811c8a74fd56, findElement {using\u003did, value\u003dap_email}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\\Users\\TR\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:53397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53397/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 83da58a6532ce36cae1d811c8a74fd56\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)\r\n\tat ui.stepdefinitions.AmazonStepDefinitions.succes_login(AmazonStepDefinitions.java:70)\r\n\tat ✽.Success Login(file:///C:/Users/TR/Desktop/IT%20COURSE/AmazonProject/src/test/resources/uiFeatures/TC_005_SearchingProduct.feature:5)\r\n",
+              "duration": 15566284200,
+              "status": "failed"
             },
             "line": 5,
             "name": "Success Login",
@@ -109,8 +110,7 @@
           },
           {
             "result": {
-              "duration": 3360624600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Click to search box",
@@ -121,8 +121,8 @@
           },
           {
             "result": {
-              "duration": 4573982800,
-              "status": "passed"
+              "duration": 997400,
+              "status": "skipped"
             },
             "line": 7,
             "name": "Search \"product_name\"",
@@ -139,8 +139,8 @@
           },
           {
             "result": {
-              "duration": 1518266900,
-              "status": "passed"
+              "duration": 3997000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "Test all listed products must contain \"product_name\"",
@@ -157,8 +157,8 @@
           },
           {
             "result": {
-              "duration": 254325200,
-              "status": "passed"
+              "duration": 1999700,
+              "status": "skipped"
             },
             "line": 9,
             "name": "Close the page",
